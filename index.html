@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Master</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="quiz-container">
+
+        <!-- Quiz Header -->
+        <header class="quiz-header">
+            <h1>Quiz Master</h1>
+            <p>Test your knowledge and challenge yourself.</p>
+
+            <button id="start-quiz-btn" type="button">
+                Start Quiz
+            </button>
+        </header>
+
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="quiz-section" aria-labelledby="question-title">
+
+            <!-- Progress -->
+            <div class="quiz-progress">
+                <p id="progress-text">Question 1 of 10</p>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+
+            <!-- Question -->
+            <div class="question-container">
+                <h2 id="question-title">
+                    Question will appear here
+                </h2>
+            </div>
+
+
+            <!-- Answer Options -->
+            <div id="answer-options" class="answer-options">
+
+                <button class="answer-option" type="button" data-answer="A">
+                    <span class="option-label">A</span>
+                    <span class="option-text">Answer option 1</span>
+                </button>
+
+                <button class="answer-option" type="button" data-answer="B">
+                    <span class="option-label">B</span>
+                    <span class="option-text">Answer option 2</span>
+                </button>
+
+                <button class="answer-option" type="button" data-answer="C">
+                    <span class="option-label">C</span>
+                    <span class="option-text">Answer option 3</span>
+                </button>
+
+                <button class="answer-option" type="button" data-answer="D">
+                    <span class="option-label">D</span>
+                    <span class="option-text">Answer option 4</span>
+                </button>
+
+            </div>
+
+
+            <!-- Quiz Navigation -->
+            <nav class="quiz-navigation" aria-label="Quiz navigation">
+
+                <button id="previous-btn" type="button">
+                    Previous
+                </button>
+
+                <button id="next-btn" type="button">
+                    Next
+                </button>
+
+            </nav>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section id="result-section" class="result-section" aria-labelledby="result-title">
+
+            <h2 id="result-title">Quiz Completed!</h2>
+
+            <p id="result-message">
+                Your final score is:
+            </p>
+
+            <p id="score">
+                0 / 10
+            </p>
+
+            <button id="restart-btn" type="button">
+                Restart Quiz
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
